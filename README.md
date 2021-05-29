@@ -1,12 +1,7 @@
-## Micronaut 2.5.4 Documentation
+## Exemplo de como não bloquear a thread do Netty usando suspend functions
 
-- [User Guide](https://docs.micronaut.io/2.5.4/guide/index.html)
-- [API Reference](https://docs.micronaut.io/2.5.4/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/2.5.4/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+O projeto possui duas APIs, uma usando `suspend functions` e outra que não usa. O blockround foi instalado e ele exibe uma exception caso a thread seja bloqueada.
 
-## Feature http-client documentation
+Para ver a thread sendo bloqueada acesse "http://localhost:8080/"
 
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
-
+Para ver a thread rodando sem bloqueios acesse "http://localhost:8080/suspend"
